@@ -1,0 +1,13 @@
+class E3
+{
+	public static void main(String[]args)
+	{
+		//possible
+		home_loan h1=new home_loan();
+		loan_acc l1=h1;
+		System.out.println(l1);
+		car_loan c1=new car_loan();
+		l1=c1;
+		System.out.println(l1);
+	}
+}

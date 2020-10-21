@@ -1,0 +1,15 @@
+package Sorting;
+//Divide and conqure 
+/**
+ * Divide the unsorted list into n Sublist , each containing 1 element
+ * Tale adjacent pairs of two singleton lists and merge them to form a list of 2 elements
+ * Repeat the process till a single sorted list is obtained
+ * @author Pavan
+ *
+ */
+public class MergeSort02 {
+
+	public static void main(String[] args) {
+		
+	}
+}

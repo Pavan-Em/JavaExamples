@@ -1,0 +1,9 @@
+package pack1;
+
+public class B extends A
+{
+	static
+	{
+		System.out.println("static from B");
+	}
+}

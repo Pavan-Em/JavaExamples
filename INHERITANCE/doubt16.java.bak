@@ -1,0 +1,30 @@
+class A
+{
+	int i=66;
+	static
+	{
+		System.out.println("from A");
+	}
+	{
+		System.out.println("non static A");
+	}
+}
+class B extends A
+{
+	int i=66;
+	static
+	{
+		System.out.println("from B");
+	}
+	{
+		System.out.println("non static B");
+	}
+}
+class doubt16
+{
+	public static void main(String[]args)
+	{
+		B obj=new B();
+		System.out.println(obj.i);
+	}
+}

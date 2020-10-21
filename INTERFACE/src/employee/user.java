@@ -1,0 +1,33 @@
+package employee;
+
+class user
+{
+	public static void main(String[]args)
+	{
+		empinfo badra=employeedriver.createemp();
+		badra.displayinfo();
+		badra.work();
+		System.out.println("=====================================");
+		/*empinfo rudra=employeedriver.createemp(2,"RUDRA",50000);
+		rudra.displayinfo();
+		rudra.work();
+		System.out.println("=====================================");
+		empinfo venki=employeedriver.createemp(3,"VENKI",90000);
+	   // venki.displayinfo();
+		//venki.work();
+		System.out.println("=====================================");
+		System.out.println("NO of Employees in Company:"+employee.getnoofemp());
+		System.out.println("=====================================");
+		((employee)badra).setsal(60000);
+		badra.displayinfo();
+		System.out.println("=====================================");
+		((empsal)badra).paysal();
+		System.out.println("=====================================");
+		empinfo koyya=employeedriver.createemp(1,"KOYYA",60000);
+		koyya.displayinfo();
+		koyya.work();
+		System.out.println("=====================================");
+		System.out.println("No of Employees:"+employee.getnoofemp());*/
+	
+	}
+}

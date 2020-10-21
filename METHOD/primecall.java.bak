@@ -1,0 +1,24 @@
+class primecall
+{
+	public static void main(String[]args)
+	{
+		prime(30);
+	}
+	public static void prime(int n)
+	{
+		if(n==1)
+			return;
+		n--;
+		prime (n);
+		boolean isprime=true;
+		for(int i=2;i<n;i++)
+		{
+			if(n%i==0)
+			{
+				return;
+			}
+		}
+			if(isprime)
+				System.out.print(n+" ");
+	}
+}

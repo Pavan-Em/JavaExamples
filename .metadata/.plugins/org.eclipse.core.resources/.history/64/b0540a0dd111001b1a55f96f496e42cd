@@ -1,0 +1,32 @@
+package Searching;
+
+public class BinarySearch {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {2,5,7,9,2,14,16,20};
+		
+		int sp = 0;
+		int ep = arr.length-1;
+		int mp = (sp+ep)/2;
+		
+		int target=20;
+		
+		while(sp<= ep) {
+			if(arr[mp]==target)
+			{
+				System.out.println(target+" is at index "+ mp);
+				break;
+			}
+			else if(arr[mp]< target)
+			{
+				sp=mp+1;
+			}
+			else
+				ep=mp-1;
+			mp=(sp+ep)/2;
+		}
+		if(sp<ep)
+			System.out.println("Element is Not Present");
+	}
+}

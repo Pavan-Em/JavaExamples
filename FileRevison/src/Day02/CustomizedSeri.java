@@ -1,0 +1,62 @@
+package Day02;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class CustomizedSeri {
+	public static void main(String[] args) throws Exception {
+
+		employee emp1 = new employee(01, "Pavan", "Tools");
+		employee emp2 = new employee(02, "Ratna", "Kera");
+
+		FileOutputStream fos = new FileOutputStream("C:\\Users\\Windows\\Desktop\\StreamTesting.txt");
+		ObjectOutputStream os = new ObjectOutputStream(fos);
+
+		os.writeObject(emp1);
+		os.writeObject(emp2);
+
+		FileInputStream fis = new FileInputStream("C:\\Users\\Windows\\Desktop\\StreamTesting.txt");
+		ObjectInputStream is = new ObjectInputStream(fis);
+
+		employee e1 = (employee) is.readObject();
+		employee e2 = (employee) is.readObject();
+
+		System.out.println(e1);
+		System.out.println(e2);
+	}
+
+}
+
+class employee implements Serializable {
+	int id;
+	String name;
+	transient String pwd;
+
+	public employee() {
+	}
+
+	public employee(int id, String name, String pwd) {
+		this.id = id;
+		this.name = name;
+		this.pwd = pwd;
+	}
+
+	public String toString() {
+		return "[" + id + "," + name + "," + pwd + "]";
+	}
+
+	private void writeObject(ObjectOutputStream os) throws Exception {
+		os.defaultWriteObject();
+		String epwd = pwd + "lowda";
+		os.writeObject(epwd);
+	}
+
+	private void readObject(ObjectInputStream is) throws Exception {
+		is.defaultReadObject();
+		String epwd = (String) is.readObject();
+		pwd = epwd;
+	}
+}

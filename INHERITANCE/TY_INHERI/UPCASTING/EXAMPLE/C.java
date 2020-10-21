@@ -1,0 +1,14 @@
+class C extends A
+{
+	static int e=5;
+	int f=6;
+
+	static
+	{
+		System.out.println("static from C");
+	}
+
+	{
+		System.out.println("non static from C");
+	}
+}

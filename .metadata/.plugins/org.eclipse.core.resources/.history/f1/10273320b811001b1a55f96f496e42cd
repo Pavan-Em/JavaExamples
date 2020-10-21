@@ -1,0 +1,13 @@
+package File;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class ReaderBuffer{
+	
+	public static void main(String[] args) {
+		
+		BufferedWriter writer = new BufferedWriter(new FileWriter())
+	}
+}

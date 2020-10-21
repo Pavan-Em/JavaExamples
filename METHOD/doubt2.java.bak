@@ -1,0 +1,12 @@
+class doubt2
+{
+ public static void num(int n,int m)
+ {
+   int a=n+m;
+   System.out.print(a);
+ }
+ public static void main(String[]args)
+ {
+  System.out.println(num(10,20));// CTE..bcoz that method is not returning anything
+ }
+}

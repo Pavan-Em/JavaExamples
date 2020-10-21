@@ -1,0 +1,29 @@
+
+import java.util.Scanner;
+class A
+{
+	int i;
+	static int a;
+	Scanner ns=new Scanner(System.in);
+	static Scanner s=new Scanner (System.in);
+	public static void main(String[]args)
+	{
+		A obj=new A();
+		Scanner p=new Scanner(System.in);
+		System.out.print("enter a:");
+		a=s.nextInt();
+		System.out.print("enter i:");
+		obj.i=s.nextInt();
+		System.out.print("enter a:");
+		a=obj.ns.nextInt();
+		System.out.print("enter i:");
+		obj.i=obj.ns.nextInt();
+		System.out.print("enter a:");
+		a=p.nextInt();
+		System.out.print("enter i:");
+		obj.i=p.nextInt();
+		System.out.println("a:"+a);
+		System.out.println("i:"+obj.i);
+	}
+
+}

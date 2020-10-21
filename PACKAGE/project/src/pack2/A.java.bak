@@ -1,0 +1,19 @@
+package pack2;
+
+class A
+{
+	void add()
+	{
+		System.out.println("hehehehe");
+	}
+}
+
+class B
+
+
+{
+	public static void main(String []args)
+	{
+		System.out.println("this is from B");
+	}
+}

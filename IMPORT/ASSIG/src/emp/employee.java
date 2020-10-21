@@ -1,0 +1,35 @@
+package emp;
+import emp.te.te;
+import emp.dev.dev;
+
+public class employee
+{
+	public static int no_of_emp;
+	public  int eid;
+	public String ename;
+	{
+		no_of_emp++;
+		eid=no_of_emp;
+	}
+	public employee()
+	 {
+		 no_of_emp--;
+		 eid=no_of_emp;
+	 }
+
+	public  employee(String ename)
+	{
+		 this.ename=ename;
+	}
+	public void displaydetails(employee e)
+	{
+		System.out.println("Employee ID:"+e.eid);
+		System.out.println("Name       :"+e.ename);
+		if(e instanceof te)
+			System.out.println("Job DES:"+((te)e).jd);
+		if(e instanceof dev)
+			System.out.println("Job DES:"+((dev)e).jd);
+		
+	}
+
+}

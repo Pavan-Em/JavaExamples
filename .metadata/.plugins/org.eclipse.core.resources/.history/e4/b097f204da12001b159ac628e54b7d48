@@ -1,0 +1,11 @@
+package questions;
+
+public class Q05 {
+
+	public static void main(String[] args) {
+		
+		//to know current directory
+		String currdir = System.getProperty("user.dir");
+		System.out.println(currdir);
+	}
+}

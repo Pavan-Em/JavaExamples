@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class s1
+{
+	public static void main(String[]args)
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.print("Enter the Number:");
+		int num=s.nextInt();
+		System.out.println("Entered Num is:"+num);
+		System.out.print("Enter anothr Number:");
+		double num1=s.nextDouble();
+		System.out.println("Another NUmber is:"+num1);
+		System.out.print("Enter num:");
+		double num2=s.nextInt();
+		System.out.println("The number is:"+num2);
+		
+
+	}
+}

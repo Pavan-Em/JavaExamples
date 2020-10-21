@@ -1,0 +1,11 @@
+class p2
+{
+	public static void main(String[]args)
+	{
+		System.out.printf("%-10S %-15S \n","item","price");
+		System.out.printf("%-10S %-15S \n","----","-----");
+		System.out.printf("%-10S %-,15.2fRs \n","samosa",2000.3655);
+		System.out.printf("%-10S %-15.2fRs \n","jelabi",25.00);
+		System.out.printf("%-10S %-15.2fRs \n","puffs",15.2364);
+	}
+}

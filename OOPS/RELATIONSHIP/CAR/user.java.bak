@@ -1,0 +1,9 @@
+class user
+{
+	public static void main(String[]args)
+	{
+		car c1=new car();
+		c1.drive();
+		System.out.println("HP:"+c1.e.hp);
+	}
+}

@@ -1,0 +1,24 @@
+class bank
+{
+	private String bank_name;
+	private int bank_no;
+
+	bank(int banl_no,String bank_name)
+	{
+		this.bank_name=bank_name;
+	}
+
+	save_acc s=new save_acc();
+	cur_acc c=new cur_acc();
+	loan_acc l=new loan_acc();
+
+	void createacc(String cus_name)
+	{
+		s.createacc(cus_name);
+	}
+
+	void createacc(String cus_name,int bal_amount)
+	{
+		s.createacc(cus_name,bal_amount);
+	}
+}

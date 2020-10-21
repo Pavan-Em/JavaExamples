@@ -1,0 +1,38 @@
+package Day02;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class Task extends dog {
+
+	public static void main(String[] args) throws Exception {
+		
+		dog obj = new dog();
+		
+		FileOutputStream fos = new FileOutputStream("C:\\Users\\Windows\\Desktop\\StreamTesting.txt");
+		ObjectOutputStream os = new ObjectOutputStream(fos);
+		
+		os.writeObject(obj);
+		
+		FileInputStream fis = new FileInputStream("C:\\Users\\Windows\\Desktop\\StreamTesting.txt");
+		ObjectInputStream is = new ObjectInputStream(fis);
+		
+		dog dog1 = (dog)is.readObject();
+		
+		System.out.println(dog1);
+		System.out.println(dog1.name);
+	}
+}
+
+class dog implements Serializable
+{
+	String name = "lowda";
+	
+	public String toString ()
+	{
+		return name;
+	}
+}

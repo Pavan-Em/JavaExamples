@@ -1,0 +1,26 @@
+class prime4 
+{
+	public static void main(String[] args) 
+	{
+		prime(22);
+	}
+	public static void prime(int x)
+	{
+		
+		for(int i=1;i<=x;i++)
+		{
+		boolean isprime=true;
+		for(int j=2;i<i;j++)
+		{
+			if(i%j==0)
+			{
+				isprime= false;
+				break;
+			     
+			}
+		}
+		if( isprime)
+			System.out.print(i+" ");
+		}
+}
+}

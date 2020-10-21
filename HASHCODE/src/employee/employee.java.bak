@@ -1,0 +1,49 @@
+package employee;
+
+class employee
+{
+	int eid;
+	String ename;
+	double esal;
+	boolean m_status;
+
+	employee() {}
+
+	employee (int eid,String ename, double esal, boolean m_status)
+	{
+		this.eid=eid;
+		this.ename=ename;
+		this.esal=esal;
+		this.m_status=m_status;
+	}
+
+	public void display()
+	{
+		System.out.println("Emp ID      :"+eid);
+		System.out.println("Emp Name    :"+ename);
+		System.out.println("Emp Salary  :"+esal);
+		if(m_status)
+			System.out.println("Emp M_status:Married");
+		else
+			System.out.println("Emp M_satus:Single");
+	}
+
+	public boolean equals(Object obj)
+	{
+		employee obj1=(employee)obj;
+		return eid==obj1.eid &&
+			   ename==obj1.ename &&
+			   esal==obj1.esal &&
+			   m_status==obj1.m_status;
+	}
+
+	public int hashCode()
+	{
+		int hc=0;
+		hc=eid;
+		hc+=ename.hashCode();
+		hc+=(int)esal;
+		hc+=m_status?1:0;
+		return hc;
+	}
+}

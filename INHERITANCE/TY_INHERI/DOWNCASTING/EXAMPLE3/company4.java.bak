@@ -1,0 +1,13 @@
+class company4
+{
+	void paysal(employee emp)
+	{
+		System.out.println("EID:"+emp.eid);
+		if(emp instanceof te)
+		System.out.println("JOB DES:"+((te)emp).jb);
+		if(emp instanceof dev)
+		System.out.pritnln("JOB DES:"+((dev)emp).jb);
+		System.out.println("SAL:"+emp.sal);
+		System.out.println("salary is credited to employee");
+	}
+}

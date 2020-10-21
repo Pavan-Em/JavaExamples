@@ -1,0 +1,61 @@
+package Day02;
+
+import java.io.Externalizable;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutput;
+import java.io.ObjectOutputStream;
+
+public class Externalize {
+
+	public static void main(String[] args) {
+		
+		employee02 obj01 = new employee02(01,"pavan","Tools");
+		employee02 obj02 = new employee02(02,"Rathna","Kera");
+		
+		FileOutputStream out = new FileOutputStream("C:\\Users\\Windows\\Desktop\\StreamTesting.txt");
+		ObjectOutputStream fout = new ObjectOutputStream(out);
+		fout.writeObject(obj01);
+		fout.writeObject(obj02);
+		fout.flush();
+		
+		FileInputStream in = new FileInputStream("C:\\Users\\Windows\\Desktop\\StreamTesting.txt");
+		ObjectInputStream fin = new ObjectInputStream(in);
+		Obj o1 =(Obj)fin.readObject();
+		Obj o2=(Obj)fin.readObject();
+	}
+	
+}
+
+class employee02 implements Externalizable
+{
+	int id ;
+	String name ;
+	String pwd;
+	
+	public employee02() {}
+	
+	public employee02(int id , String name , String pwd)
+	{
+		this.id = id ;
+		this.name =name ;
+		this.pwd = pwd;
+	}
+
+	@Override
+	public void writeExternal(ObjectOutput out) throws IOException {
+		out.writeObject(name);
+		out.writeInt(id);
+		
+	}
+
+	@Override
+	public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+		name = (String)in.readObject();
+		id = in.readInt();
+		
+	}
+}

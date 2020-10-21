@@ -1,0 +1,15 @@
+class ok
+{
+	static int a=10;
+	static String b="pav";
+	static double  sal=10000;
+	public static void main(String[]args)
+	{
+		System.out.println(call());
+	}
+
+	public static String call()
+	{
+		return "id  :"+a+"\nName:"+b+"\nsal :"+sal;//space  matters
+	}
+}

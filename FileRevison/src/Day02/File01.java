@@ -1,0 +1,28 @@
+package Day02;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class File01 {
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedWriter wr = new BufferedWriter(new FileWriter("C:\\Users\\Windows\\Desktop\\Testing.txt",true));
+		wr.write("Pavan");
+		wr.write(" Tools");
+		wr.newLine();
+		wr.write("Hole Man");
+		wr.flush();
+		
+		BufferedReader re = new BufferedReader(new FileReader("C:\\Users\\Windows\\Desktop\\Testing.txt"));
+		String getText = re.readLine();
+		while(getText != null)
+		{
+			System.out.println(getText);
+			getText = re.readLine();
+		}
+		
+	}
+}

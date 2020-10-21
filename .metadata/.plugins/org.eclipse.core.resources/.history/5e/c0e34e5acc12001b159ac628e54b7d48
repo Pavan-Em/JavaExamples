@@ -1,0 +1,17 @@
+package Day02;
+
+import java.io.File;
+import java.io.PrintStream;
+
+public class printstream {
+
+	public static void main(String[] args) {
+		
+		byte[] b = "pavan".getBytes();
+		
+		File f = new File("C:\\Users\\Windows\\Desktop\\Stremtesting.txt");
+		PrintStream ps = new PrintStream("C:\\Users\\Windows\\Desktop\\StremTesting.txt", true);
+		
+		
+	}
+}

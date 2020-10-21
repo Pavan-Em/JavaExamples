@@ -1,0 +1,41 @@
+package emp.dev;
+import emp.employee;
+
+public class dev extends employee
+{
+	private  String jd="DEVELOPER";
+
+	//getter and setter for jd
+	public String getjd()
+	{
+		return jd;
+	}
+	public void setjd(String jd)
+	{
+		this.jd=jd;
+	}
+
+	private double salary=50000;
+
+	//setter and getter for salary
+	public double getsalary()
+	{
+		return salary;
+	}
+	public void setsalary(double salary)
+	{
+		this.salary=salary;
+	}
+
+	//constructor
+	public dev()
+	{
+		System.out.println("WARNING");
+		System.out.println("Give Details  of the Employee");
+	}
+
+	public dev(String ename)
+	{
+		super(ename);
+	}
+}

@@ -1,0 +1,4 @@
+class mango extends A
+{
+	static double price;
+}

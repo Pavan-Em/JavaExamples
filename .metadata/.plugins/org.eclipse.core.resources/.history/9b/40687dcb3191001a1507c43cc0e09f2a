@@ -1,0 +1,80 @@
+package assignment;
+import java.util.Scanner;
+public class password1 {
+	public static void main(String[]args)
+	{
+		enterpassword();
+	}
+	
+	public static void enterpassword()
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.print("Enter New Password:");
+		String password=s.nextLine();
+		checkpassword(password);
+		System.out.print("Re-Enetr Password:");
+		String repassword=s.nextLine();
+		if(password.equals(repassword))
+			System.out.println("Successfully Set the PASSWORD");
+		else
+			System.out.println("PASSWORD Not Matching");
+	}
+	
+	public static void checkpassword(String password)
+	{
+		if(password.length()>=8 && password.length()<=16)
+		{
+			if(password.charAt(0)>='A'&&password.charAt(0)<='Z'||password.charAt(0)>='a'&&password.charAt(0)<='z'||password.charAt(0)==' ')
+			{
+				for(int i=0;i<password.length();i++)
+				{
+					if(password.charAt(i)>='A'&&password.charAt(i)<='Z')
+					{
+						if(password.charAt(i)>='0'&&password.charAt(i)<='9')
+						{
+							if(password.charAt(i)>=32&&password.charAt(i)<=47||password.charAt(i)>=58&&password.charAt(i)<=64||password.charAt(i)>=91&&password.charAt(i)<=96||password.charAt(i)>=123&&password.charAt(i)<=126)
+							{
+								if(password.charAt(i)!=' ')
+								{
+									if(i==password.length()-1)
+										return;
+								}
+								else
+								{
+									System.out.println("Password Should not have \"Space\"");
+									enterpassword();
+								}
+							}
+							else
+							{
+								System.out.println("Password should have atlest 1 Special Character");
+								enterpassword();
+							}
+						}
+						else
+						{
+							System.out.println("Password Should have atlest 1 Number");
+							enterpassword();
+						}
+					}
+					else
+					{
+						System.out.println("Password Should have atlest 1 UpperCase");
+						enterpassword();
+					}
+				}
+			}
+			else
+			{
+				System.out.println("Password Should not Start with Special Character");
+				enterpassword();
+			}
+		}
+		else
+		{
+			System.out.println("Password should have 8-16 Charater");
+			enterpassword();
+		}
+		
+	 }
+}

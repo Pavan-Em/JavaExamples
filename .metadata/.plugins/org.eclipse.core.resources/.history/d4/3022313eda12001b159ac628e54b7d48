@@ -1,0 +1,19 @@
+package questions;
+
+import java.io.File;
+
+public class Q05 {
+
+	public static void main(String[] args) {
+		
+		//to know current directory
+		String currdir = System.getProperty("user.dir");
+		System.out.println(currdir);
+		
+		//Find file Extension
+		File f = new File(System.getProperty("user.dir")+"\\Q05.java");
+		String path = f.getName();
+		int index=path.lastIndexOf("\\");
+		System.out.println(path.substring(index+1));
+	}
+}

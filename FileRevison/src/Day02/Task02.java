@@ -1,0 +1,25 @@
+package Day02;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+
+public class Task02 {
+
+	public static void main(String[] args) throws Exception {
+		
+		String name = "pavan";
+		byte[] b = name.getBytes();
+		
+		ByteArrayOutputStream os = new ByteArrayOutputStream();
+		
+		os.write(b);
+		
+		System.out.println(os.toString());
+		
+		ByteArrayInputStream is = new ByteArrayInputStream(b);
+		
+		for(int i=0 ; i<b.length ; i++)
+		System.out.print((char)is.read());
+		
+	}
+}

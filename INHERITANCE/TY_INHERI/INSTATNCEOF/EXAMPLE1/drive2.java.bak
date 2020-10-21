@@ -1,0 +1,8 @@
+class drive2
+{
+	public static void main(String[]args)
+	{
+		A obj1=new C();
+		B obj2=(B)obj1;
+	}
+}

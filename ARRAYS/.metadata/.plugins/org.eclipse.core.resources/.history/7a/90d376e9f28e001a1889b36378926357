@@ -1,0 +1,92 @@
+package employee;
+
+public class employee {
+	
+	private int eid;
+	private String ename;
+	private double esal;
+	private boolean em_status;
+	
+	//getter and setter for eid
+	public int geteid() {
+		return eid;
+	}
+	public void seteid(int eid) {
+		this.eid = eid;
+	}
+	
+	//getter and setter for ename
+	public String getename() {
+		return ename;
+	}
+	public void setename(String ename) {
+		this.ename=ename;
+	}
+	
+	//getter and setter for esal
+	public double getesal() {
+		return esal;
+	}
+	public void setesal(double esal) {
+		this.esal = esal;
+	}
+	
+	//getter and setter for m_status
+	public void getEm_status() {
+		if(em_status)
+		{
+			System.out.println("Married");
+		}
+		else
+			System.out.println("Single");
+	}
+	public void setem_status(boolean em_status) {
+		this.em_status = em_status;
+	}
+	
+	//constructor
+	public employee(){}
+	public employee(int eid, int ename, double esal, boolean em_status) {
+		super();
+		this.eid = eid;
+		this.ename = ename;
+		this.esal = esal;
+		this.em_status = em_status;
+	}
+	
+	//display info
+	public void display()
+	{
+		System.out.println("Emp ID:"+eid);
+		System.out.println("Emp Name:"+ename);
+		System.out.println("Emp Sal:"+esal);
+		if(em_status)
+			System.out.println("Emp M_Status:Married");
+		else
+			System.out.println("Emp M_Status:Single");
+	}
+	
+	//no need of toString()
+	
+	//override equals()
+	public boolean equals(Object obj)
+	{
+		employee o=(employee)obj;
+		return eid==o.eid &&
+				ename==o.ename &&
+				esal==o.esal &&
+				em_status==o.em_status;
+	}
+	
+	//override hashCode()
+	public int hashCode()
+	{
+		int hc=0;
+		hc=eid;
+		hc+=ename.hashCode();
+		hc+=(int)esal;
+		hc+=em_status?1:0;
+		return hc;
+	}
+	
+}

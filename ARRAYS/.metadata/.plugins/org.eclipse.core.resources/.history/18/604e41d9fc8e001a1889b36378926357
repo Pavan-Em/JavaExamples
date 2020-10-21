@@ -1,0 +1,26 @@
+package user;
+import java.util.Scanner;
+import employee.employee;
+import te.te;
+import dev.dev;
+import empdriver.empdriver;
+
+public class user {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner (System.in);
+		System.out.print("Enter the Emp ID:");
+		int eid=s.nextInt();
+		System.out.print("Enetr the Emp Name:");
+		String ename=s.next();
+		System.out.print("Enetr the Emp Sal:");
+		double esal=s.nextDouble();
+		employee e1=empdriver.createemp(eid, ename, esal);
+		employee e2=empdriver.createemp(2,"KERA",50000);
+		System.out.println("==================================");
+		e1.display();
+		System.out.println("====================================");
+		e2.display();
+	}
+
+}

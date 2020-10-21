@@ -1,0 +1,34 @@
+package dev;
+import employee.employee;
+public class dev extends employee{
+	
+	dev(){}
+	public dev(int eid, String ename, double esal, boolean em_status) {
+		super(eid, ename, esal, em_status);
+		// TODO Auto-generated constructor stub
+	}
+
+	String jd="DEVELOPER";
+	
+	//display info
+	public void display()
+	{
+		super .display();
+		System.out.println("Emp JD      :"+jd);
+	}
+	
+	//override equals()
+	public boolean equals(Object obj)
+	{
+		if(obj instanceof dev)
+			return super.equals(obj);
+		return false;
+	}
+	
+	//override hashCode()
+	public int hashCode()
+	{
+		return super.hashCode()+jd.hashCode();
+	}
+
+}

@@ -1,0 +1,11 @@
+abstract aaaa
+{
+	int a;
+	static int x;
+	public int b;
+	private int c;
+	protected int m;
+	public static int e;
+	protected static int f;
+	private static int k;
+}

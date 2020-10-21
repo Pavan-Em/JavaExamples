@@ -1,0 +1,18 @@
+class A
+{
+	int i=1;
+}
+
+class B extends A
+{
+	int i=2;
+}
+
+class doubt4
+{
+	public static void main(String[]args)
+	{
+		B obj=new B();
+		System.out.println(obj.i);
+	}
+}

@@ -1,0 +1,40 @@
+class A
+{
+	static int i=99;
+	static
+	{
+		System.out.println("from A");
+	}
+}
+
+class B extends A
+{
+	static int i=66;
+	static
+	{
+		System.out.println("from B");
+	}
+}
+
+class C extends B
+{
+	/*static int i=33;*/
+	static
+	{
+		System.out.println("from C");
+	}
+}
+
+class drive8
+{
+	public static void main(String[]args)
+	{
+		System.out.println(C.i);//first preference given to father very impt note this shit
+	}
+}
+
+//output
+//from A
+//from B
+//66
+//very impt note it

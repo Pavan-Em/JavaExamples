@@ -1,0 +1,12 @@
+package Programiz;
+
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+
+public class outputStreamWriter {
+	public static void main(String[] args) throws IOException {
+		OutputStreamWriter ops = new OutputStreamWriter(System.out);
+		ops.write("Hasta El fuego");
+		//ops.flush();
+	}
+}

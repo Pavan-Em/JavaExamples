@@ -1,0 +1,8 @@
+class doubt1
+{
+	static int i=test();
+	int test()
+	{
+		return 20;
+	}
+}

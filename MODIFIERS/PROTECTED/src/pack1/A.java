@@ -1,0 +1,15 @@
+package pack1;
+
+public class A
+{
+	protected int i=666;
+	//protected A(){}
+
+	public static void main(String[]args)
+	{
+		A obj1=new A();
+		System.out.println(obj1.i);
+	}
+}
+
+//we can use protected members inside the same class

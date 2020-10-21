@@ -1,0 +1,13 @@
+class p3
+{
+	public static void main(String[]args)
+	{
+		System.out.printf("% d\n",123);
+		System.out.printf("% d\n",-123);
+		System.out.printf("% -5d\n",123);
+		//System.out.printf("% +d\n",123);
+		//System.out.printf("% +d\n",-123);
+		System.out.printf("% -5d\n",-123);
+		System.out.printf("%010d\n",123);
+	}
+}

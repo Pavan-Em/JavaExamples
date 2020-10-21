@@ -1,0 +1,10 @@
+package employee;
+
+public class employee {
+	
+	private int eid;
+	private int ename;
+	private double esal;
+	private boolen em_status;
+    
+}

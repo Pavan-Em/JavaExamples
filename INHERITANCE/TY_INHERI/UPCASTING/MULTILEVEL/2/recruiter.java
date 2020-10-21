@@ -1,0 +1,15 @@
+class recruiter extends hr
+{
+	static int c=7;
+	int d=11;
+
+	static void rec()
+	{
+		System.out.println("static from recruiter");
+	}
+
+	void recruit()
+	{
+		System.out.println("non static from recuiter");
+	}
+}

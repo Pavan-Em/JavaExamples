@@ -1,0 +1,39 @@
+package laptop;
+
+class laptop
+{
+	int ram_size;
+	int hard_disk;
+	double pro_speed;
+	String unit="GB";
+
+	laptop(){}
+
+	laptop (int ram_size,int hard_disk,double pro_speed)
+	{
+		this.ram_size=ram_size;
+		this.hard_disk=hard_disk;
+		this.pro_speed=pro_speed;
+	}
+
+	public String toString()
+	{
+		System.out.println("Ram Size:"+ram_size+" GB");
+		if(hard_disk%1024==0)
+		{
+			hard_disk=hard_disk/1024;
+			unit=" TB";
+		}
+
+		System.out.println("Hard Disk:"+hard_disk+unit);
+		return "Pro Speed:"+pro_speed+" Ghz";
+	}
+
+	public boolean equals(Object obj)
+	{
+		laptop lap=(laptop)obj;
+		return ram_size==lap.ram_size &&
+			   hard_disk==lap.hard_disk &&
+			   pro_speed==lap.pro_speed;
+	}
+}

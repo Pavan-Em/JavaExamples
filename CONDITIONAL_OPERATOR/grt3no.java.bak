@@ -1,0 +1,14 @@
+class grt3no
+{
+	public static void main(String[]args)
+	{
+		int n1,n2,n3;
+		n1=6;
+		n2=12;
+		n3=-6;
+		int larger=n1>n2?n1:n2;
+		int largest=larger>n3?larger:n3;
+		System.out.println("Largest no is:"+largest);
+
+	}
+}

@@ -1,0 +1,20 @@
+class employee
+{
+	static int no_of_emp;
+	int emp_id;
+	double sal;
+
+	{
+		no_of_emp++;
+		emp_id=no_of_emp;
+	}
+	employee()
+	{
+		no_of_employee--;
+	}
+
+	employee(double sal)
+	{
+		this.sal=sal;
+	}
+}

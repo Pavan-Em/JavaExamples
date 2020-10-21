@@ -1,0 +1,16 @@
+class fdriver1
+{
+	public static void(String[]args)
+	{
+		System.out.println(mango.price)
+			mango.ripe();
+	}
+}
+/* 
+with the help of sub class name we can use static members of both sub class
+and super class
+in the above example,mango is sub class
+price is a member of sub class
+ripe() is a member of super class
+we can use both of them with the help of mango(sub class)
+*/

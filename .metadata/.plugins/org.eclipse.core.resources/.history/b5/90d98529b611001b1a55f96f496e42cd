@@ -1,0 +1,16 @@
+package File;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+
+public class WriterFile {
+
+	public static void main(String[] args) throws Exception {
+		
+		FileWriter wr = new FileWriter("C:\\Users\\Windows\\Desktop\\Testing.txt");
+		wr.write("Tools");
+		wr.flush();
+		
+	}
+}

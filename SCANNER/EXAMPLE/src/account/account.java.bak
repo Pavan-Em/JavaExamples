@@ -1,0 +1,35 @@
+package account;
+import java.util.Scanner;
+public class account
+{
+	public int ano;
+	public String name;
+	public String ifsc;
+
+	public account (){}
+
+	public account(int ano,String name,String ifsc)
+	{
+		this.ano=ano;
+		this.name=name;
+		this.ifsc=ifsc;
+	}
+
+	public void readaccdetails()
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.print("Enter Acc NO:");
+		this.ano=s.nextInt();
+		System.out.print("Enter Name:");
+		this.name=s.next();
+		System.out.print("Enter IFSC Code:");
+		this.ifsc=s.next();
+	}
+
+	public void getdetails()
+	{
+		System.out.prntln("Account NO;"+this.ano);
+		System.out.println("Holder Name:"+this.name);
+		System.out.println("IFSC Code"+this.ifsc);
+	}
+}

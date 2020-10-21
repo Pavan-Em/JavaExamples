@@ -1,0 +1,16 @@
+package user;
+
+import revnum.revnum;
+import java.util.Scanner;
+
+class user
+{
+	public static void main(String[]args)
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.print("Enter the num:");
+		int a=s.nextInt();
+		int rev=revnum.renum(a);
+		System.out.println("Reverse of "+a+" is "+rev);
+	}
+}

@@ -1,0 +1,23 @@
+class happy
+{
+	static int num=222;
+	public static void main(String[]args)
+	{
+		int num=happy.num;
+		while(num>9)
+		{
+			int sum=0;
+			while(num>0)
+			{
+				int a=num%10;
+				sum=sum+(a*a);
+				num=num/10;
+			}
+			num=sum;
+		}
+		if(num==1 || num==7)
+			System.out.println(happy.num+" is a happy number");
+		else
+			System.out.println(happy.num+" is not a happy number");
+	}
+}

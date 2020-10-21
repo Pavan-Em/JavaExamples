@@ -1,0 +1,19 @@
+class fibonacci
+{
+	public static void main(String[]args)
+	{
+		num(10);
+	}
+	public static int num(int n)
+	{
+		if(n==1)
+		{
+			System.out.print(n+" ");
+			return (n+n);
+		}
+		
+		n=num(n-1)+(n-2);
+		System.out.print(n+" ");
+		return n;
+	}
+}

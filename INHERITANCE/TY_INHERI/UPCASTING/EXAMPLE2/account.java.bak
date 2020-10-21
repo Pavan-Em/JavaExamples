@@ -1,0 +1,7 @@
+class account
+{
+	int acc_no;
+	String cus_name;
+
+	account(){}
+}

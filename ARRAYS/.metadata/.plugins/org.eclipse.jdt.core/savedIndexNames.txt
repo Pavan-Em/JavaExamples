@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+G:\QSPIDERS\JP\DAY1\.metadata\.plugins\org.eclipse.jdt.core
+1671692264.index
+4216833925.index

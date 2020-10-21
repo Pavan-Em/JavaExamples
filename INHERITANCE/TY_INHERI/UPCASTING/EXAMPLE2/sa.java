@@ -1,0 +1,12 @@
+class sa extends account
+{
+	sa()
+	{
+		System.out.println("WARNING");
+		System.out.println("Give all the info");
+	}
+	sa(int acc_no,String cus_name)
+	{
+		super(acc_no,cus_name);
+	}
+}

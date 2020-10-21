@@ -1,0 +1,15 @@
+class testing extends Employee
+{
+	static int p=2;
+	int q=66;
+
+	static void test()
+	{
+		System.out.println("static from testing");
+	}
+
+	void testing()
+	{
+		System.out.println("non static from testing");
+	}
+}

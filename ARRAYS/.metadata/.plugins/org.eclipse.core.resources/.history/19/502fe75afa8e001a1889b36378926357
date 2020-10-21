@@ -1,0 +1,56 @@
+package empdriver;
+import java.util.Scanner;
+import te.te;
+import dev.dev;
+import employee.employee;
+public class empdriver
+{
+	
+	public static employee createemp(int eid,String ename,double esal)
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enetr Respective Dept Num to ADD:");
+		System.out.println("Enetr 1 for TEST ENGG");
+		System.out.println("Enter 2 for DEVELOPER");
+		System.out.println("Enter 0 to EXIT");
+		System.out.print("Enter the Number:");
+		int n=s.nextInt();
+		switch(n)
+		{
+		case 1:
+		{
+			System.out.print("Enter 1 for Married\nEnetr 2 for Single\nEnetr the NUmber:");
+			int m=s.nextInt();
+			switch(m)
+			 {
+			    case 1:{ return new te(eid,ename,esal,true);}break;
+			    case 2:{ return new te(eid,ename,esal,false);}break;
+			    default:{ System.out.println("Error");
+			            return null;}
+			}
+		}
+		break;
+		case 2:
+		{
+			System.out.print("Enter 1 for Married\nEnetr 2 for Single\nEnetr the NUmber:");
+			int m=s.nextInt();
+			switch(m)
+			 {
+			    case 1:{ return new dev(eid,ename,esal,true);}break;
+			    case 2:{ return new dev(eid,ename,esal,false);}break;
+			    default:{ System.out.println("Error");
+			            return null;}
+			}
+		}
+		break;
+		case 0:
+		{
+			return null;
+		}
+		default:{ System.out.println("Error");
+		return null;}
+		}
+	}
+}
+
+	

@@ -1,0 +1,48 @@
+class name
+{
+	private String name;
+	private date birthday;
+
+	name(String name,date birthday)
+	{
+		this.name=name;
+		this.birthday=birthday;
+	}
+
+	public String toString()
+	{
+		return "My NAme is "+name+", my Birthday is on "+birthday;
+	}
+}
+class date
+{
+	private int day;
+	private int mon;
+	private int year;
+
+	date(int day,int mon,int year)
+	{
+		this.day=day;
+		this.mon=mon;
+		this.year=year;
+
+		//System.out.println(this);
+	}
+
+	public String toString()
+	{
+		return day+"/"+mon+"/"+year;
+	}
+}
+
+class driver3
+{
+	public static void main(String[]args)
+	{
+		date obj=new date(6,11,1996);
+		name obj1=new name("PAvan",obj);
+		System.out.println(obj1);
+		System.out.println(obj.toString());
+
+	}
+}

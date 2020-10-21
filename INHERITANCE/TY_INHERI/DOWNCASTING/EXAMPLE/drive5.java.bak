@@ -1,0 +1,9 @@
+class drive5
+{
+	public static void main(String[]args)
+	{
+		A obj1=new B();
+		B obj2=(B)obj1;
+		System.out.println("i:"+obj2.i);
+	}
+}

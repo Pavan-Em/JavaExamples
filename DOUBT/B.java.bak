@@ -1,0 +1,8 @@
+class B
+{
+	B()
+	{
+		super();
+		super();
+	}
+}

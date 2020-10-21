@@ -1,0 +1,26 @@
+class A
+{
+	int i=66;
+	{
+		System.out.println("from A");
+	}
+}
+class B extends A
+{
+	int j=33;
+	{
+		System.out.println("from B");
+	}
+}
+class doubt1
+{
+	public static void main(String[]args)
+	{
+		A obj=new B();//not static initializers get executed here only
+		System.out.println(obj.i);
+	}
+}
+//OUTPUT
+//from A
+//from B
+//66

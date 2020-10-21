@@ -1,0 +1,15 @@
+class car_loan extends loan_acc
+{
+	static int a=4;
+	int b=99;
+
+	static void car()
+	{
+		System.out.println("static from car_loan");
+	}
+
+	void carloan()
+	{
+		System.out.println("non static from car_laon");
+	}
+}

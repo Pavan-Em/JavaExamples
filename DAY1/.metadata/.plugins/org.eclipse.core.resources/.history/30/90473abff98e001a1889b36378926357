@@ -1,0 +1,23 @@
+package user;
+import java.util.Scanner;
+import employee.employee;
+import te.te;
+import dev.dev;
+import empdriver.empdriver;
+
+public class user {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner (System.in);
+		System.out.print("Enter the Emp ID:");
+		int eid=s.nextInt();
+		System.out.print("Enetr the Emp Name:");
+		String ename=s.next();
+		System.out.print("Enetr the Emp Sal:");
+		double esal=s.nexDouble();
+		e
+		
+
+	}
+
+}

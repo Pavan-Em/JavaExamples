@@ -1,0 +1,15 @@
+class sbibank extends bank
+{
+	account acc;
+	sbibank(){ System.out.println("Give a Bank Name");}
+	sbibank(String bank_name)
+	{
+		 super(bank_name);
+	}
+
+	void createacc(account acc)
+	{
+		this.acc=acc;
+	}
+
+}

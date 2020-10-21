@@ -1,0 +1,35 @@
+package string;
+
+import java.util.Scanner;
+
+class string
+{
+	public static void main(String[]args)
+	{
+		Scanner s=new Scanner(System.in);
+		String a,b,c,d,e;
+		int i,j;
+		double x,y;
+
+		String resstring,resline,resint,resdouble;
+		System.out.print("String a:");
+		a=s.next();
+		System.out.print("String b:");
+		b=s.next();
+		System.out.print("lineString c:");
+		c=s.nextLine();
+		System.out.print("lineString d:");
+		d=s.nextLine();
+		System.out.print("lineString e:");
+		e=s.nextLine();
+		System.out.print("int i:");
+		i=s.nextInt();
+		System.out.print("int j:");
+		j=s.nextInt();
+		System.out.print("double but int x:");
+		x=s.nextInt();
+		System.out.print("double y:");
+		y=s.nextDouble();
+
+	}
+}

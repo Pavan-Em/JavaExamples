@@ -1,0 +1,30 @@
+package File;
+
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+
+public class WriterFile {
+
+	public static void main(String[] args) throws Exception {
+		
+		/*FileWriter wr = new FileWriter("C:\\Users\\Windows\\Desktop\\Testing.txt", true);
+		wr.write("Tools");
+		wr.flush();*/
+		
+		FileReader re = new FileReader("C:\\Users\\Windows\\Desktop\\Testing.txt");
+		File f = new File("C:\\Users\\Windows\\Desktop\\Testing.txt");
+		int r = re.read();
+		while(r!=-1)
+		{
+			System.out.println((char)r);
+			r=re.read();
+		}
+		
+		char[] ch = new char[(int)f.length()];
+		re.read(ch);
+		System.out.println(String.valueOf(ch));
+	}
+}

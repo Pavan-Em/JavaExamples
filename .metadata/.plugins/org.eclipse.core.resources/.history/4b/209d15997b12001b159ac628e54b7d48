@@ -1,0 +1,17 @@
+package Day02;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class File01 {
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedWriter wr = new BufferedWriter(new FileWriter("C:\\Users\\Windows\\Desktop\\Testing.txt",true));
+		wr.write("Pavan");
+		wr.write(" Tools");
+		wr.newLine();
+		wr.write("Hole Man");
+		
+	}
+}

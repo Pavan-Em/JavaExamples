@@ -1,0 +1,8 @@
+package pack1;
+interface A
+{
+	static void test()
+	{
+		System.out.println("from inter A static");
+	}
+}

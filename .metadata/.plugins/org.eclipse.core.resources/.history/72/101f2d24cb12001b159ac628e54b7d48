@@ -1,0 +1,18 @@
+package Day02;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+
+public class Task02 {
+
+	public static void main(String[] args) {
+		
+		String name = "pavan";
+		byte[] b = name.getBytes();
+		
+		ByteArrayOutputStream os = new ByteArrayOutputStream(b);
+		
+		String bName = os.toString();
+		
+	}
+}

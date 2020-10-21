@@ -1,0 +1,19 @@
+abstract class a1
+{
+	int i=10;
+
+	static void test()
+	{
+		System.out.println("form A1");
+	}
+	abstract void exam()
+	{
+		System.out.println("from a1 abstract");
+	}
+	
+	public static void main(String[]args)
+	{
+		
+	}
+}
+

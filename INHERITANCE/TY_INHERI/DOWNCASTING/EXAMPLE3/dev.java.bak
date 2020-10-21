@@ -1,0 +1,10 @@
+class dev extends employee
+{
+	String jb="developer";
+
+	te(){};
+	te(int eid,double sal)
+	{
+		super(eid,sal);
+	}
+}

@@ -1,0 +1,19 @@
+class  ns1
+{
+	static ns1 a;
+	public static void main(String[] args) 
+	{
+		 
+		 System.out.println(a);
+		 a=new ns1();
+		 System.out.println(a);
+		 System.out.println(a.a);
+		 a=new ns1();
+		 System.out.println(a);
+		 
+		 System.out.println(a.a=new ns1());
+		 System.out.println(a);
+		 a=1;
+		 System.out.println(a);
+	}
+}

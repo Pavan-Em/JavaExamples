@@ -1,0 +1,34 @@
+class personal_loan extends loan_acc
+{
+	String purpose;
+
+    //constructor
+	personal_loan()
+	{
+		System.out.println("WARNING:");
+		System.out.println("you should enter Name , Amount and EMI(in Months) and");
+		System.out.println("Purpose to Create an Account");
+	}
+	personal_loan(String acc_holder_name)
+	{
+		System.out.println("WARNING:");
+		System.out.println("Enter Amount, EMI(per Month) and Purpose to Create an Account ");
+	}
+	personal_loan(String acc_holder_name,int amount,int emi)
+	{
+		System.out.println("WARNING:");
+		System.out.println("Enter Purpose");
+	}
+	personal_loan(String acc_holder_name,int amount,int emi,String purpose)
+	{
+		super(acc_holder_name,amount,emi);
+		this.purpose=purpose;
+	}
+
+	//to get details
+	void Pdetails()
+	{
+		Ldetails();
+		System.out.println("Purpose        :"+purpose);
+	}
+}

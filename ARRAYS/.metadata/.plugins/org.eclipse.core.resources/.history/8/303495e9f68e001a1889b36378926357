@@ -1,0 +1,23 @@
+package empdriver;
+import java.util.Scanner;
+import te.te;
+import dev.dev;
+import employee.employee;
+public class empdriver {
+	
+	public static void createemp(int eid,String ename,double esal)
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enetr Respective Dept Num to ADD:");
+		System.out.println("Press 1 for TEST ENGG");
+		System.out.println("Press 2 for DEVELOPER");
+		System.out.println("Press 0 to EXIT");
+		System.out.print("Enter the Number:");
+		int n=s.nextInt();
+		switch(n)
+		{
+		case 1:{ return new 
+		}
+	}
+
+}

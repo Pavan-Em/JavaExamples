@@ -1,0 +1,38 @@
+class hmm
+{
+	{
+		System.out.println("n s block");
+	}
+	hmm()
+	{
+		System.out.println("no argue");
+	}
+	hmm(int x)
+	{
+		System.out.println(x);
+		System.out.println("1 argue");
+	}
+	hmm( int x,int y)
+	{
+		this(y);
+		System.out.println("2 argue");
+	}
+	hmm(int x,int y,int z)
+	{
+		this (x,y);
+		System.out.println("3 argue");
+	}
+	public static void main(String[]args)
+	{
+		new hmm();
+		new hmm(2,3,4);
+	}
+}
+//OUTPUT
+//n s block
+//no argue
+//no argue
+//3
+//1 argue
+//2 argue
+//3 argue

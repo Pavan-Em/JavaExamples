@@ -1,0 +1,22 @@
+package driver;
+import emp.employee;
+import emp.te.te;
+import emp.dev.dev;
+import company.company;
+
+public class driver
+{
+	public static void main(String[]args)
+	{
+		company google=new company("GOOGLE");
+		System.out.println("Company Name:"+google.com_name);
+	    te badra=new te("BADRA");
+		dev rudra=new dev ("RUDRA");
+		google.addemp(badra);
+		google.addemp(rudra);
+		System.out.println("=====================");
+		google.e.displaydetails(badra);
+		System.out.println("=====================");
+		google.e.displaydetails(rudra);
+	}
+}

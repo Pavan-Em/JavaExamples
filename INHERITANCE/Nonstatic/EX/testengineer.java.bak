@@ -1,0 +1,11 @@
+class testengineer
+{
+	static  int count;
+	{
+		count++;
+	}
+	void work()
+	{
+		System.out.println(eid+" is working as a testengineer");
+	}
+}

@@ -1,0 +1,14 @@
+class A
+{
+	static int n=66;
+}
+class doubt11
+{
+	static int m=33;
+	public static void main(String[]args)
+	{
+		A x=new A();
+		System.out.println(x.n);
+		System.out.println(x.m);
+	}
+}

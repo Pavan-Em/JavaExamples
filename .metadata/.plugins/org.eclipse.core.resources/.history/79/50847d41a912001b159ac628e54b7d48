@@ -1,0 +1,12 @@
+package Day02;
+
+public class Task02 {
+
+	public static void main(String[] args) {
+		
+		String name = "pavan";
+		byte[] b = name.getBytes();
+		
+		System.out.println(b.toString());
+	}
+}

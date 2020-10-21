@@ -1,0 +1,51 @@
+class icici extends bank
+{
+	String bank_name="ICICI BANK";
+	sav_acc sa=new sav_acc();
+	cur_acc ca=new cur_acc();
+
+	//constructor
+	icici()
+	{
+		System.out.println("WARNING:");
+		System.out.println("Give Details to Craeate a Bank");
+	}
+	icici(String ifsc)
+	{
+		super(ifsc);
+		System.out.println("ICICI Bank is Created");
+	}
+	
+	
+	//method to pay salary to employee
+	void paysal(employee e)
+	{
+		System.out.println("Salary is Credited to Employee");
+		System.out.println("Employe ID:"+e.emp_id);
+		if(e instanceof clerk)
+			System.out.println("JOB des:"+((clerk)e).jd);
+		if(e instanceof cashier)
+			System.out.println("JOB des:"+((cashier)e).jd);
+		System.out.println("Salary:"+e.sal);
+	}
+
+	//details of the customer
+	void details(customer c)
+	{
+		System.out.println("ICICI BANK")
+		System.out.println("Bank ID:"+bank_id);
+		System.out.println("IFSC Code:"+ifsc);
+		System.out.println("Account NO:"+c.acc_no);
+		if(c instanceof badra)
+		System.out.println("Name:"+((badra)c).cus_name);
+		if(c instanceof rudra)
+		System.out.println("Name:"+((rudra)c).cus_name);
+		System.out.println("Account Type:"+c.acc_type);
+		System.out.println("Balance Amount:"+c.amt_bal);
+		System.out.println("Balance Amount:"+c.amt_bal);
+		System.out.println("Address:"+c.address);
+		System.out.println("Phone NO:"+c.phn_no);
+	}
+	
+
+}
